@@ -1,0 +1,6 @@
+{
+  "markdown.marp.themes": ["./themes/agentic-coding.css"],
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.mathTypesetting": "katex",
+  "markdown.marp.breaks": false
+}
