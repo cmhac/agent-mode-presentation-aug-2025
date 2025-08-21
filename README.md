@@ -29,13 +29,19 @@ npm run server
 
 ```bash
 # Build PDF
-npm run build
+npm run build:pdf
 
-# Build HTML
+# Build HTML (for web viewing)
 npm run build:html
 
 # Build PowerPoint
 npm run build:pptx
+
+# Build HTML with assets for GitHub Pages
+npm run build:pages
+
+# Build all formats
+npm run build:all-formats
 ```
 
 ## 📁 Project Structure
@@ -117,7 +123,21 @@ Place images in the `img/` directory and reference them:
 
 The presentation can be exported to multiple formats:
 
-- **PDF**: Best for sharing and printing
-- **HTML**: Interactive web presentation
-- **PPTX**: Editable PowerPoint format
+- **PDF**: Best for sharing and printing (`npm run build:pdf`)
+- **HTML**: Interactive web presentation (`npm run build:html`)
+- **PPTX**: Editable PowerPoint format (`npm run build:pptx`)
 - **PNG/JPEG**: Individual slide images
+
+## 🚀 GitHub Pages Deployment
+
+This project is configured to automatically deploy to GitHub Pages when you push to the main branch.
+
+### Setup GitHub Pages
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" in the sidebar
+3. Under "Source", select "GitHub Actions"
+4. Push changes to the main branch to trigger deployment
+5. The workflow will automatically build and deploy your presentation
+
+The presentation will be available at: `https://[username].github.io/[repository-name]/`

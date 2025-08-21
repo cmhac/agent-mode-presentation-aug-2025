@@ -6,7 +6,11 @@
   "scripts": {
     "build": "marp presentation.md --allow-local-files -o dist/presentation.pptx",
     "build:editable": "marp presentation.md --pptx-editable --allow-local-files -o dist/presentation-editable.pptx",
-    "build:all-formats": "marp presentation.md --allow-local-files --html -o dist/presentation.html && marp presentation.md --allow-local-files --pdf -o dist/presentation.pdf && marp presentation.md --allow-local-files --pptx -o dist/presentation.pptx",
+    "build:html": "marp presentation.md --allow-local-files --html -o dist/index.html",
+    "build:pdf": "marp presentation.md --allow-local-files --pdf -o dist/presentation.pdf",
+    "build:pptx": "marp presentation.md --allow-local-files --pptx -o dist/presentation.pptx",
+    "build:all-formats": "npm run build:html && npm run build:pdf && npm run build:pptx",
+    "build:pages": "npm run build:html && cp -r img dist/ && cp -r themes dist/",
     "dev": "marp --preview --allow-local-files presentation.md",
     "watch": "marp --watch --allow-local-files presentation.md -o dist/presentation.pptx",
     "server": "marp --server ./",
