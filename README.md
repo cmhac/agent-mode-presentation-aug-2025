@@ -76,7 +76,7 @@ The `.vscode/settings.json` configures:
 ```markdown
 ---
 marp: true
-theme: agentic-coding
+theme: uncover
 ---
 
 # Slide Title

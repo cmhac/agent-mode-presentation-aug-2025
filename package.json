@@ -4,12 +4,12 @@
   "description": "Presentation about Agentic Coding Tools and Agent Mode",
   "main": "index.js",
   "scripts": {
-    "build": "marp slides.md --pdf --theme themes/agentic-coding.css --no-config -o dist/presentation.pdf",
-    "build:html": "marp slides.md --html --theme themes/agentic-coding.css --no-config -o dist/presentation.html",
-    "build:pptx": "marp slides.md --pptx --theme themes/agentic-coding.css --no-config -o dist/presentation.pptx",
+    "build": "marp slides.md --pdf --theme themes/nord-theme.css --no-config -o dist/presentation.pdf",
+    "build:html": "marp slides.md --html --theme themes/nord-theme.css --no-config -o dist/presentation.html",
+    "build:pptx": "marp slides.md --pptx --theme themes/nord-theme.css --no-config -o dist/presentation.pptx",
     "build:all": "npm run build:html && npm run build && npm run build:pptx",
-    "dev": "marp --preview --theme themes/agentic-coding.css --no-config slides.md",
-    "watch": "marp --watch --theme themes/agentic-coding.css --no-config slides.md -o dist/presentation.html",
+    "dev": "marp --preview --theme themes/nord-theme.css --no-config slides.md",
+    "watch": "marp --watch --theme themes/nord-theme.css --no-config slides.md -o dist/presentation.html",
     "server": "marp --server --no-config ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

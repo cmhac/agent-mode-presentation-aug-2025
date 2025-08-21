@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: agentic-coding
+theme: nord
 title: "Part 3: How It Works"
 paginate: true
 transition: fade
@@ -8,64 +8,38 @@ transition: fade
 
 <!-- _class: lead -->
 
-# **Part 3: How It Works**
+# **How It Works**
 
 ## _Under the Hood & Context Management_
 
 ---
 
-# How It Works Under the Hood
+# Agent Workflow
 
-## Autonomous Workflow
-
-1. **Plan** → Break request into steps
-2. **Execute** → Edit code, run tools
-3. **Check** → Read results, validate
-4. **Adjust** → Continue or seek guidance
-
-<div class="process-loop">
-Plan <span class="arrow">→</span> Execute <span class="arrow">→</span> Check <span class="arrow">→</span> Adjust <span class="arrow">🔄</span>
-</div>
-
-<!-- _class: invert -->
+1. **Reason** → Understand the task
+2. **Act** → Use tools to make changes
+3. **Observe** → Check results and adjust
 
 ---
 
-# Context Awareness
+# Tools
 
-The agent reads your **codebase context** to find relevant sections:
+- Agents use **tools** (functions with JSON in/out) to act.
+- They decide when to call them, provide inputs, and use outputs to continue.
 
-- 🔍 **Automatic discovery**: No need to specify file names
-- 🎯 **Smart targeting**: "Add logout button" → finds UI & auth code
-- 📊 **Pattern recognition**: Uses training data to predict changes
+---
+
+# MCP Servers
+
+MCP (model context protocol) is standard way for agents to connect to external data and tools. They give agents groups of tools to work with.
 
 ---
 
 # The Context Problem
 
-<!-- _class: invert -->
+LLMs can handle huge context, but too much slows them down.
 
-## Modern LLMs can handle massive context...
+The solution:
 
-### But performance degrades with more context
-
-**The trick**: Narrowly tailor context to include:
-
-- ✅ **Lots** of what they need to know
-- ❌ **Little** of what they don't
-
----
-
-# Solutions to Context Issues
-
-## 📋 **Rules**
-
-Custom instructions injected into agent context
-
-## 🎭 **Modes**
-
-Specialized behavior patterns
-
-## 🔌 **MCP (Model Context Protocol)**
-
-Structured context management
+- Give the agents lots of info they do need
+- Minimize irrelevant context

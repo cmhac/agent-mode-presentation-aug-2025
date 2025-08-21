@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: agentic-coding
+theme: nord
 title: "Agentic Coding Tools & Agent Mode"
 description: "A comprehensive presentation about AI-powered coding agents and how they transform development workflows"
 author: "Your Name"
