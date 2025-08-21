@@ -62,3 +62,21 @@ Custom utility classes
   font-weight: 600;
 }
 */
+
+.process-loop {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 3px solid var(--color-highlight);
+  border-radius: 12px;
+  padding: 2em;
+  margin: 1.5em 0;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 122, 204, 0.2);
+}
+
+.process-loop .arrow {
+  color: var(--color-accent);
+  font-size: 1.2em;
+  margin: 0 0.5em;
+}

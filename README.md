@@ -1,6 +1,6 @@
 # Agentic Coding Tools Presentation
 
-A comprehensive presentation about AI-powered coding agents and Agent Mode, built with [Marp](https://marp.app/).
+A presentation about AI-powered coding agents and Agent Mode, built with [Marp](https://marp.app/).
 
 ## 🚀 Quick Start
 
@@ -49,16 +49,6 @@ npm run build:pptx
 ├── marp.config.mjs        # Marp configuration
 └── package.json           # Project configuration
 ```
-
-## 🎨 Theme Features
-
-The custom **agentic-coding** theme includes:
-
-- Dark mode optimized for code presentations
-- Syntax highlighting for code blocks
-- Custom color scheme for AI/tech topics
-- Responsive typography
-- Transition animations
 
 ## 🔧 Configuration
 
@@ -131,65 +121,3 @@ The presentation can be exported to multiple formats:
 - **HTML**: Interactive web presentation
 - **PPTX**: Editable PowerPoint format
 - **PNG/JPEG**: Individual slide images
-
-## 🎯 Presentation Tips
-
-1. **Use the preview**: `npm run dev` for live editing
-2. **Test exports**: Verify PDF/HTML output before presenting
-3. **Check images**: Ensure all images load correctly
-4. **Practice navigation**: Learn keyboard shortcuts for presentation mode
-
-## 🎮 Presentation Controls
-
-When presenting (HTML/preview mode):
-
-- **Arrow keys**: Navigate slides
-- **F/F11**: Toggle fullscreen
-- **P**: Open presenter view (external window)
-- **Esc**: Exit fullscreen
-
-## 🔍 Troubleshooting
-
-### PDF Export Issues
-
-If PDF export fails:
-
-```bash
-# Check browser installation
-npm run build -- --browser-path /path/to/browser
-
-# Allow local files (if needed)
-npm run build -- --allow-local-files
-```
-
-### Theme Not Loading
-
-- Ensure `themes/agentic-coding.css` exists
-- Check `.vscode/settings.json` configuration
-- Restart VS Code if using the extension
-
-### Image Issues
-
-- Use relative paths from project root
-- Supported formats: PNG, JPEG, SVG, GIF
-- Keep file sizes reasonable for PDF export
-
-## 📚 Resources
-
-- [Marp Documentation](https://marp.app/)
-- [Marp CLI Guide](https://github.com/marp-team/marp-cli)
-- [Markdown Syntax](https://www.markdownguide.org/)
-- [KaTeX Math](https://katex.org/)
-
-## 🤝 Contributing
-
-Feel free to:
-
-- Improve the theme
-- Add more content
-- Fix typos or formatting
-- Suggest better examples
-
-## 📄 License
-
-This presentation is open source. Feel free to adapt and reuse for your own presentations about AI coding tools.

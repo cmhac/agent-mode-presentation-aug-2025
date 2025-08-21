@@ -23,6 +23,10 @@ transition: fade
 3. **Check** → Read results, validate
 4. **Adjust** → Continue or seek guidance
 
+<div class="process-loop">
+Plan <span class="arrow">→</span> Execute <span class="arrow">→</span> Check <span class="arrow">→</span> Adjust <span class="arrow">🔄</span>
+</div>
+
 <!-- _class: invert -->
 
 ---
