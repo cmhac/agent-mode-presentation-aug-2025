@@ -1,9 +1,130 @@
 ---
 marp: true
 theme: nord
-title: "Tips for Effective Agent Interaction"
+title: "Part 3: How It Works"
 paginate: true
 transition: fade
+---
+
+<!-- _class: lead -->
+
+# **"Agentic" coding tools**
+
+## _Let the AI code for you... (sort of)_
+
+---
+
+# What is Agent Mode?
+
+<!-- _class: invert -->
+
+An AI coding assistant mode where you **describe a high-level task** and the AI autonomously plans and applies the needed code changes across your project.
+
+---
+
+# Use cases
+
+- Refactoring code (turn this block of code into a function)
+- Adding a new features (add zoom boundaries to this interactive map)
+- Migrating to a new framework (migrate this code from Pandas to Polars)
+- Vibecoding internal tools (build me a streamlit app for data entry)
+- Learning new technologies (help me understand this new API/library/etc).
+
+---
+
+# How Agent Mode Works
+
+Agent mode can take more complex multi-step actions than tab completions or regular ChatGPT.
+
+It has access to your entire codebase, and can run terminal commands and use various tools to see the output of our code and check for errors.
+
+---
+
+# Agent Workflow
+
+1. **Reason** → Understand the task
+2. **Act** → Use tools to make changes
+3. **Observe** → Check results and adjust
+
+---
+
+# Tools
+
+- Agents use **tools** (functions with JSON in/out) to act.
+- They decide when to call them, provide inputs, and use outputs to continue.
+
+---
+
+# MCP Servers
+
+MCP (model context protocol) is standard way for agents to connect to external data and tools. They give agents groups of tools to work with.
+
+---
+
+# The Context Problem
+
+LLMs can handle huge context, but too much slows them down.
+
+The solution:
+
+- Give the agents lots of info they do need
+- Minimize irrelevant context
+
+---
+
+# Rules
+
+Custom instructions injected into agent's context to control behavior.
+
+Can be provided for all requests, or based on certain files and conditions.
+
+---
+
+# Example rule: test-driven development
+
+![](img/rules/TDD.png)
+
+---
+
+# Example rule: GitHub Usage
+
+![GitHub usage rule](img/rules/GitHub%20usage.png)
+
+---
+
+# Modes
+
+Provide task-specific instructions and toolsets. Agent mode is the default, but you can create custom modes for specific workflows.
+
+---
+
+# Example mode: inline documentation maintainer
+
+![inline documentation maintainer](img/modes/inline-documenter.png)
+
+---
+
+# MCP: Model Context Protocol
+
+Connects agents to external tools and data sources:
+
+- Documentation lookup
+- Database queries
+- Domain-specific analysis
+- Real-time information
+
+Agents get toolsets from MCP servers, which can be configured into various modes.
+
+---
+
+# Best Practices
+
+✅ **Start simple** → Basic rules first
+
+✅ **Set boundaries** → Control what agents can do
+
+✅ **Iterate** → Refine rules based on results
+
 ---
 
 # **Tips for Effective Agent Interaction**

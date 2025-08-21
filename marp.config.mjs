@@ -9,29 +9,22 @@ export default defineConfig({
     minifyCSS: false,
   },
 
-  // HTML template
-  template: "bespoke",
-
   // Enable HTML tags
   html: true,
 
   // Theme configuration
   themeSet: "./themes",
 
-  // PDF configuration
-  pdfNotes: true,
-  pdfOutlines: {
-    pages: true,
-    headings: true,
-  },
+  // PowerPoint configuration - primary output format
+  pptx: true,
 
   // Browser settings
   browserTimeout: 30,
 
-  // Image settings
+  // Image settings - PPTX uses 2x scale by default for better quality
   imageScale: 2,
 
-  // Metadata
+  // Metadata (available in PPTX)
   title: "Agentic Coding Tools & Agent Mode",
   description: "A comprehensive presentation about AI-powered coding agents",
   author: "Your Name",
