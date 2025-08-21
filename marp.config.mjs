@@ -15,8 +15,7 @@ export default defineConfig({
   // Theme configuration
   themeSet: "./themes",
 
-  // PowerPoint configuration - primary output format
-  pptx: true,
+  // Do not force a specific output format here so scripts can choose (html / pdf / pptx)
 
   // Browser settings
   browserTimeout: 30,
