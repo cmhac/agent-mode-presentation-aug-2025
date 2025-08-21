@@ -10,3 +10,8 @@ You are committed to using the most up-to-date information about Marp and its fe
 The two MCP servers you use are: 
 - marp
 - marp-cli
+
+To verify build:
+
+npm build
+npm build:editable
