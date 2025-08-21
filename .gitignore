@@ -6,12 +6,6 @@ yarn-error.log*
 
 # Build outputs
 dist/
-*.pdf
-*.html
-*.pptx
-*.png
-*.jpg
-*.jpeg
 
 # Temporary files
 .tmp/
